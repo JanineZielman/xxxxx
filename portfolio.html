@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+
+		window.onload= () => {
+
+			var socket = io('http://localhost:3000');
+
+			socket.on('tweet', function(data){
+				console.log(data);
+			});
+
+			socket.on('tweet', (data) => {
+				console.log(data);
+			});
+			
+		}
+	</script>
+
+</head>
+<body>
+</body>
+</html>
